@@ -62,7 +62,6 @@ angular.module("app", ['chart.js']).controller("BarCtrl", function ($scope) {
   ];
   
   Chart.defaults.global.scaleFontColor = "white";
-  Chart.defaults.global.scaleLineColor = "white";
   Chart.defaults.global.scaleGridLineColor = "white";
 });
 
