@@ -1,0 +1,169 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; 
+  
+  }
+
+
+html {
+  background-color: #023E54; 
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#023E54), to(#10AAC0));
+  background-image: -webkit-linear-gradient(top, #023E54, #10AAC0); 
+  background-image: -moz-linear-gradient(top, #023E54, #10AAC0);
+  background-image: -o-linear-gradient(top, #023E54, #10AAC0);
+  min-height: 100%;
+  height: auto;
+}
+
+#project_form{
+margin-top: 15px;
+margin-bottom: 25px;
+}
+
+#project-container{
+text-align: center;
+}
+
+#project_section {
+background-color: transparent;
+}
+
+#project_row{
+margin-top: 50px;
+background: transparent;
+padding: 5px;
+text-align: center;
+}
+
+#project_form{
+margin-top: 70px;
+}
+
+#project1{
+width: 225px;
+height: 175px;
+margin: 5px;
+border: 2px solid black;
+background-color: gray;
+border-radius: 5px;
+text-align: center;
+}
+
+#project1:hover{
+cursor: pointer;
+background-color: #b5b9b9;
+border: 2px solid white;
+}
+
+#project2{
+width: 225px;
+height: 175px;
+margin: 5px;
+border: 2px solid black;
+background-color: gray;
+border-radius: 5px;
+text-align: center;
+}
+
+#project2:hover{
+cursor: pointer;
+background-color: #b5b9b9;
+border: 2px solid white;
+}
+
+#project3{
+width: 225px;
+height: 175px;
+margin: 5px;
+border: 2px solid black;
+background-color: gray;
+border-radius: 5px;
+text-align: center;
+}
+
+#project3:hover{
+cursor: pointer;
+background-color: #b5b9b9;
+border: 2px solid white;
+}
+
+#project_text{
+font: bold 32px Verdana;
+margin-top: 60px;
+}
+
+#project_row {
+margin-top: 20px;
+}
+
+
+#form_row{
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+#ProjectNum {
+width: 260px;
+}
+
+#ProjectName{
+width: 260px;
+
+}
+
+#ProjectDate{
+width: 260px;
+
+}
+
+#projec_chart{
+z-index: 100;
+}
+
+.chart-legend,.bar-legend,.line-legend,.pie-legend,.radar-legend,.polararea-legend,.doughnut-legend{
+list-style-type:none;
+margin-top:5px;
+text-align:center;
+-webkit-padding-start:0;
+-moz-padding-start:0;
+padding-left:0
+}
+
+.chart-legend li,.bar-legend li,.line-legend li,.pie-legend li,.radar-legend li,.polararea-legend li,.doughnut-legend li{
+display:inline-block;
+white-space:nowrap;
+position:relative;
+margin-bottom:4px;
+border-radius:5px;
+padding:2px 8px 2px 28px;
+font-size:smaller;
+cursor:default; 
+}
+
+.chart-legend li span,.bar-legend li span,.line-legend li span,.pie-legend li span,.radar-legend li span,.polararea-legend li span,.doughnut-legend li span{
+display:block;
+position:absolute;
+left:0;
+top:0;
+width:20px;
+height:20px;
+border-radius:5px;
+}
+/*# sourceMappingURL=angular-chart.css.map */

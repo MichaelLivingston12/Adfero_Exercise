@@ -1,0 +1,80 @@
+<!DOCTYPE HTML> 
+<HTML lang = "en" ng-app = "app">
+<head>
+<meta charset = "utf-8" />
+<title>Project Log</title> 
+
+<!-- css styles -->
+<link rel = "stylesheet" href = "css/cssStyles.css" />
+<link href = "css/bootstrap.min.css" rel = "stylesheet" />
+
+</head>
+
+<body>
+
+<div id = "project_container" class = "container">
+
+	<div id = "project_row" class = "row" > <!-- begin project row -->
+	
+		<div id = "project1" class = "col-md-4" title = "Click to add hours to project 1">
+			<p id = "project_text">Project 1</p>
+		</div>
+		
+			<div id = "project2" class = "col-md-4" title = "Click to add hours to project 2">
+				<p id = "project_text">Project 2</p>
+			</div>
+		
+				<div id = "project3" class = "col-md-4" title = "Click to add hours to project 3">
+					<p id = "project_text">Project 3</p>
+				</div>
+					
+		</div> <!-- end project row -->
+
+	<div id = "form_row" class = "row" > <!-- begin form and char row -->
+		<div id = "project_form" class = "col-md-6">
+		
+		<form>
+			  <div class="form-group" >
+				<label for="ProjectName">Project Name</label>
+					<input type="text" class="form-control" id="ProjectName" name = "proj_name" value="Click Above to Choose a Project" readonly>
+				</div>
+			  
+				  <div class="form-group">
+					<label for="ProjectNum">Hours Worked</label>
+					<input type="text" class="form-control" id="ProjectNum" name = "proj_hours" placeholder="Enter The Amount of Hours Worked" maxlength = "2">
+				  </div>
+			 
+					   <div class="form-group">
+						<label for="selectpicker">Date for Hours Worked</label>
+						<select class="selectpicker" name = "proj_date">
+							<option id = "9_13">9/13/15</option>
+							<option id = "9_14">9/14/15</option>
+							<option id = "9_15">9/15/15</option>
+							<option id = "9_16">9/16/15</option>
+						 </select>				
+						</div>
+			  
+			<button id = "submit" type="submit" class="btn btn-default">Submit</button>
+		</form>
+		</div>
+				<!-- chart declaration -->
+			<div id = "project_chart" class = "col-md-6" ng-controller = "BarCtrl">
+				<canvas id = "myChart" class="chart chart-bar" width="300" height="200" chart-data= "data" chart-labels="labels"  chart-options="options" chart-series = "series">
+				</canvas>
+			</div>	<!-- end of chart -->	
+	
+	</div> <!-- end of form row -->
+
+</div>
+<!-- script and controllers for the chart -->
+
+<script type = "text/javascript" src = "js/jquery_11.js"></script>
+<script type = "text/javascript" src = "js/angular.js"></script>
+<script type = "text/javascript" src = "js/chart.js"></script>
+<script type = "text/javascript" src = "js/bootstrap.min.js"></script>
+<script type = "text/javascript" src = "js/respond.min.js"></script>
+<script type = "text/javascript" src = "js/custom.js"></script>
+<script type = "text/javascript" src = "js/angular-chart.js"></script>
+</body>
+</HTML> <!-- end of document -->
+
