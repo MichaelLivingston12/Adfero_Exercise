@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+							/* project click functions */
 $("#project1").click(function() {
                 $("#ProjectName").val("Project_1");
             });
@@ -12,6 +12,8 @@ $("#project3").click(function() {
                 $("#ProjectName").val("Project_3");
             });
 });
+
+							/* begin Angular module */
 
 angular.module("app", ['chart.js']).controller("BarCtrl", function ($scope) {
   $scope.labels = ['09/13/15', '09/14/15', '09/15/15', '09/16/16'];
@@ -63,7 +65,7 @@ angular.module("app", ['chart.js']).controller("BarCtrl", function ($scope) {
   
   Chart.defaults.global.scaleFontColor = "white";
   Chart.defaults.global.scaleGridLineColor = "white";
-});
+}); /*end Angular module */
 
 
 
